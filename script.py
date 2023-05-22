@@ -1,16 +1,27 @@
 import re
 
+"""
+[A-Z] character classes
+* = 0 or more
++ = 1 or more
+() = group stuff
+\. = escape a character
+\w = word character (todo: what does it include?)
+? = optional
+{3} = match 3 of ...
+^$ = begin and end
+"""
 
 def email_regex(string):
-    pass
+    return re.match(r"[A-Za-z.]+@(\w+\.)+\w+", string)
 
 
 def url_regex(string):
-    pass
+    return re.match(r"^(https?|ftp)://.*\.(org|com)", string)
 
 
 def phone_number_regex(string):
-    pass
+    return re.match(r"^\(\d{3}\)\d{3}-\d{4}$", string)
 
 
 def hello_world(string):

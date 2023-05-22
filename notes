@@ -1,0 +1,10 @@
+[A-Z] character classes
+* = 0 or more
++ = 1 or more
+() = group stuff
+\. = escape a character
+\w = word character (todo: what does it include?)
+? = optional
+{3} = match 3 of ...
+^$ = begin and end
+

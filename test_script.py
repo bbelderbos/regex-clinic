@@ -26,7 +26,7 @@ def test_lowercase_letters():
 
 def test_contains_digit():
     assert contains_digit("abc123")
-    assert contains_digit("abcd")
+    assert not contains_digit("abcd")
     assert not contains_digit("efgh")
 
 

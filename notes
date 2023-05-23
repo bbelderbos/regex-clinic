@@ -1,10 +1,17 @@
+search vs match to match partial vs full string
 [A-Z] character classes
 * = 0 or more
 + = 1 or more
-() = group stuff
+() = group stuff (also capture)
+(?:) = non-capturing group
 \. = escape a character
-\w = word character (todo: what does it include?)
+\w = word character (A-Z, a-z, 0-9, _)
+\d = digit
+\S = non space, \s = space (space, tab, \n, \r, form feed)
 ? = optional
 {3} = match 3 of ...
-^$ = begin and end
-
+{3,} = match 3 or more of ...
+^$ = begin and end of string
+[^aeiou] negating char sets e.g. consonant
+\1 repeat the same subpattern
+re.I = case insensitive match

@@ -1,4 +1,4 @@
-search vs match to match partial vs full string
+search vs match to match anywhere or at start of string
 [A-Z] character classes
 * = 0 or more
 + = 1 or more
@@ -15,3 +15,5 @@ search vs match to match partial vs full string
 [^aeiou] negating char sets e.g. consonant
 \1 repeat the same subpattern
 re.I = case insensitive match
+re.sub(n) = find and replace
+re.findall = extract all matching patterns in list
